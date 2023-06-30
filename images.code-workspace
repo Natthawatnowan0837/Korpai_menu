@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "images",
+			"path": "../Qr_menu/static/images"
+		},
+		{
+			"name": "responsive-navbar-html-css-js-11-february",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

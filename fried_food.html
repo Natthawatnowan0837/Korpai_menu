@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korpai Update menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Korpai Update </h1>
+              <nav>
+                  <ul>
+                      <li>
+                          <a href="index.html">เครื่องดื่ม</a>
+                      </li>
+                      <li>
+                          <a href="กับแกล้ม.html">กับแกล้มเบาๆ</a>
+                      </li>
+                      <li>
+                          <a href="fried_food.html">ของทอด</a>
+                      </li>
+                      <li>
+                          <a href="dish_food.html">อาหารจานเดียว</a>
+                      </li>
+                      <li>
+                          <a href="yum_food.html">ลวกจิ้ม/ยำ/ส้มตำ</a>
+                      </li>
+                      <li>
+                          <a href="ต้ม_ปลา.html">ต้มกวนโอ๊ย/ปลา</a>
+                      </li>
+  
+                  </ul>
+              </nav>
+          </div>
+        <div class="header-right">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="menu">
+        <div class="food-items">
+            <img src="images/fried_food/FrenchFries.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>เฟรนช์ฟรายส์</h5>
+                  <h5 class="price"> 68 ฿</h5>
+              </div>
+              <p>ซอสชีส/ซอสปาปริก้า </p>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/FriedBeans.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>ถั่วทอด</h5>
+                  <h5 class="price"> 48 ฿ </h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/FriedRiceCrackers.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>ข้าวเกรียวทอด</h5>
+                  <h5 class="price"> 58 ฿ </h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/Cashew.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>เม็ดมะม่วงหิมพานต์</h5>
+                  <h5 class="price"> 68 ฿ </h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/FriedChickenTendon.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>เอ็นไก่ทอด</h5>
+                  <h5 class="price"> 68 ฿ </h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/FriedChickenWings.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>ปีกไก่ทอดนํ้าปลา</h5>
+                  <h5 class="price"> 68 ฿ </h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/SunDriedPork.webp" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>หมูแดดเดียว</h5>
+                  <h5 class="price"> 68 ฿</h5>
+              </div>
+          </div>
+        </div>
+
+        <div class="food-items">
+            <img src="images/fried_food/SunDriedBeef.jpg" alt="Image Description" class="background-image">
+          <div class="details">
+              <div class="details-sub">
+                  <h5>เนื้อแดดเดียว</h5>
+                  <h5 class="price"> 68 ฿ </h5>
+              </div>
+          </div>
+        </div>
+
+    </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function() {
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

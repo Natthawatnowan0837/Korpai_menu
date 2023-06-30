@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "ubuntu";
+}
+img {
+    width: 100%;
+}
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background: #F25829;
+}
+
+h1{
+    color: #000000;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+
+header .header-left {
+    display: flex;
+    align-items: center;
+}
+header .header-left .logo {
+    width: 140px;
+}
+header .header-left nav {
+    margin-left: 50px;
+}
+header .header-left nav ul {
+    display: flex;
+}
+nav ul li a {
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: 0.2s;
+}
+nav ul li a:hover,
+nav ul li a.active {
+    color: #000000;
+}
+nav .login-signup {
+    display: none;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .header-right .hamburger {
+    margin-left: 20px;
+    cursor: pointer;
+    display: none;
+}
+header .header-right .hamburger div {
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background: #fff;
+}
+@media only screen and (max-width: 1000px) {
+    header {
+        padding: 0 20px;
+    }
+    header .header-right .hamburger {
+        display: block;
+    }
+    header .header-left nav {
+        margin: 0;
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        background-color: #e7c71e;
+        padding: 30px;
+        transition: 0.3s;
+        text-align: center;
+        z-index: 9999;
+    }
+    header .header-left nav.active {
+        top: 70px;
+    }
+    header .header-left nav ul {
+        display: block;
+    }
+}
+@media only screen and (max-width: 500px) {
+    nav .login-signup {
+        display: block;
+        margin-top: 20px;
+    }
+    header .header-right .login-signup {
+        display: none;
+    }
+}
+
+.menu{
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px,1fr));
+  grid-gap: 20px 20px;
+}
+
+.food-items{
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  margin: 0 20px;
+}
+.food-items img{
+  position: relative;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  top:20px
+}
+
+.details{
+  padding: 30px 10px;
+  display: grid;
+  grid-row-gap: 20px;
+}
+.details-sub{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.details-sub>h5{
+  font-weight: 600;
+  font-size: 18px;
+}
+.price{
+  text-align: right;
+}
+.details>p{
+  color: #111;
+  font-size: 15px;
+  line-height: 10px;
+  font-weight: 400;
+  align-self: stretch;
+}
+.details>button{
+  background-color: #cb202d;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 180px;
+}
