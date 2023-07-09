@@ -116,6 +116,7 @@ header .header-right .hamburger div {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(300px,1fr));
   grid-gap: 20px 20px;
+  margin-top: 5 px;
 }
 
 .food-items{
@@ -124,7 +125,6 @@ header .header-right .hamburger div {
   grid-template-rows: auto 1fr;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  margin: 0 20px;
 }
 .food-items img{
   position: relative;
@@ -168,13 +168,16 @@ header .header-right .hamburger div {
 
 .container button{
     color: #fff;
-    padding: 8px 22px;
+    padding: 8px 20px;
     border-radius: 6px;
     background: #7d2ae8;
     transition: all 0.2s ease;
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
 .container button:active{
     transform: scale(0.96);
 }
+
+
